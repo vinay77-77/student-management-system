@@ -1,0 +1,6 @@
+LOGIN MODULE
+
+Features:
+- Student login
+- Username and password validation
+- Logout functionality
