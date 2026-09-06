@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .gender {
+            margin-bottom: 15px;
+        }
+
+        .gender label {
+            margin-right: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-box">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="input-box">
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required>
+        </div>
+
+        <div class="gender">
+            <label><strong>Gender:</strong></label><br><br>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <div class="input-box">
+            <label>Country</label>
+            <select required>
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" placeholder="Confirm password" required>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <div class="login-link">
+            Already have an account?
+            <a href="#">Login</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
